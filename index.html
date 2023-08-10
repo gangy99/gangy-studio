@@ -1,71 +1,377 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="author" content="Angélica Cruz - Gangy">
-<meta name="description" content="Gangy Artista Visual especialista en dibujo, pintura, escultura e ilustración. Entra al portafolio digital y descubre las posibilidades">
-<meta name="keywords" content="Artista, Artista visual, Gangy, artes plásticas, dibujo, pintura, ilustración, ilustración digital, arte, portafolio, comisiones">
-<meta name="robots" content="index, all, follow">
-<meta property="og:image" content="https://www.gangy-studio.com/imgs/tigre-san-aparicio.jpg">
-<link rel="icon" type="image/x-icon" href="imgs/icon-la.ico">
-<title>Gangy | Artista Visual | Ilustración</title>
-<link href="css/style-inicio.css" rel="stylesheet" type="text/css">
-<link rel="canonical" href="https://www.gangy-studio.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="robots" content="index, all, follow">
+    <link rel="canonical" href="">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,400&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/60755b03f5.js" crossorigin="anonymous"></script>
+
+    <title>Gangy | Artista Visual</title>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sections/banner-principal.css">
+    <link rel="stylesheet" href="css/sections/sobre-mi.css">
+    <link rel="stylesheet" href="css/sections/proyectos.css">
+    <link rel="stylesheet" href="css/sections/uxui.css">
+    <link rel="stylesheet" href="css/sections/contacto.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    
+
 </head>
+
 <body>
-<div class="contenedor" id="inicio">
-  <header>
-    <nav class="nav"><a href="index.html" target="_self"><img src="imgs/icon inicio-13.png" alt="" width="1043" height="1043" class="inicio"></a>
-      <ul class="menu">
-        <li><a href="Portafolio.html" target="_self">Portafolio</a></li>
-        <li><a href="Acerca de.html" target="_self">Acerca de</a></li>
-        <li><a href="#contacto" target="_self">Contacto</a></li>
-      </ul>
-    </nav>
-    <input name="checkbox" type="checkbox" id="btn-menu">
-    <label for="btn-menu"><img src="imgs/ham%20bco-13.png" alt="" width="42" height="42" class="ham"></label>
-    <nav class="nav-01">
-	  <ul>
-	    <li><a href="index.html">Inicio</a></li>
-	    <li><a href="Portafolio.html" target="_self">Portafolio</a></li>
-	    <li><a href="Acerca de.html" target="_self">Acerca de</a></li>
-	    <li><a href="#contacto" target="_self">Contacto</a></li>
-      </ul>
-    </nav>
-</header>
-<section class="slide">
-  <article class="tigre">
-    <img src="imgs/Tigre-inicio.png" alt="">
-  </article>
-</section>
-  <footer id="contacto">
-    <div class="col-01">
-      <h1>DIRECCIÓN</h1>
-      <ul>
-        <li>Tizayuca, Hidalgo</li>
-        <li>México</li>
-      </ul>
-    </div>
-    <div class="col-01">
-      <h1>CONTACTO</h1>
-      <ul>
-        <li>(+52) 55 31 79 66 46</li>
-        <li>01 779 688 5347</li>
-        <li>contacto@gangy-studio.com</li>
-      </ul>
-    </div>
-  <div class="col-02">
-  <h1>SÍGUENOS</h1>
-  <a href="https://www.facebook.com/gangy99" target="new"><img src="imgs/icon%20fb-13.png" alt="" width="500" height="500" class="redes"></a>
-  <a href="https://www.instagram.com/gangy_99/" target="new"><img src="imgs/icon insta-13.png" alt="" width="1043" height="1043" class="redes"></a>
-  <a href="https://www.behance.net/gangy" target="new"><img src="imgs/icon be-13.png" alt="" width="1043" height="1043" class="redes"></a>
-  <a href="https://www.linkedin.com/in/gangy99" target="new"><img src="imgs/icon linkdn-13.png" alt="" width="1043" height="1043" class="redes"></a>
-</div>
-  </footer>
-  </div>
+    <header>
+
+        <!-- MENU BARRA -->
+        <nav class="menu__bar">
+            <a href="#" class="logo__gangy">
+                <img src="imgs/Logo Gangy bco-03.png" alt="logo gangy">
+            </a>
+            <ul>
+                <a href="#sobreMi">Sobre mí</a>
+                <a href="arte.html">Arte</a>
+                <a href="disegno.html">Diseño</a>
+                <a href="ilustracion.html">Ilustración</a>
+                <a href="ux-ui.html">UX/UI</a>
+                <a href="#contacto">Contacto</a>
+            </ul>
+            <a href="https://wa.me/525531796646" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            
+        </nav>
+
+        <!-- FIXED MENU -->
+        <nav class="fixed__menu" id="fixedMenu">
+            <a href="#" class="logo__gangy">
+                <img src="imgs/Logo Gangy bco-03.png" alt="logo gangy">
+            </a>
+            <ul>
+                <a href="#sobreMi">Sobre mí</a>
+                <a href="arte.html">Arte</a>
+                <a href="disegno.html">Diseño</a>
+                <a href="ilustracion.html">Ilustración</a>
+                <a href="ux-ui.html">UX/UI</a>
+                <a href="#contacto">Contacto</a>
+            </ul>
+            <a href="https://wa.me/525531796646" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </nav>
+
+        <!-- MOBILIE MENU -->
+
+        <nav class="mobile__menu">
+            <div class="mobile__menu-barra">
+                <a href="#" class="logo__gangy">
+                    <img src="imgs/Logo Gangy bco-03.png" alt="logo gangy">
+                </a>
+                <a id="btnMenu" onclick="openNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <ul id="mobileMenuList">
+                <a id="closeMenu" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+                <a id="closeMenu" onclick="closeNav()" href="#sobreMi">Sobre mí</a>
+                <a id="closeMenu" onclick="closeNav()" href="arte.html">Arte</a>
+                <a id="closeMenu" onclick="closeNav()" href="disegno.html">Diseño</a>
+                <a id="closeMenu" onclick="closeNav()" href="ilustracion.html">Ilustración</a>
+                <a id="closeMenu" onclick="closeNav()" href="ux-ui.html">UX/UI</a>
+                <a id="closeMenu" onclick="closeNav()" href="#contacto">Contacto</a>
+            </ul>
+
+    </header>
+    <main>
+
+        <!-- BANNER PRINCIPAL -->
+        <section class="banner__principal" id="inicioBanner">
+            <div class="ilustracion-principal">
+                <img class="tigre" src="imgs/Tigre-inicio-01.png" alt="Tigre de San Aparicio">
+                <img class="banner__principal-logo" src="imgs/Logo Gangy bco-03.png" alt="Logo Gangy Artista Visual">
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+
+        <section class="container" id="sobreMi">
+            <div class="sobre__mi">
+                <div class="ladrona-amable">
+                    <img src="imgs/retrato.jpg" alt="">
+                </div>
+                <div class="banner_principal-texto">
+                    <h1>
+                        ¿Quién es gangy?
+                    </h1>
+                    <p>
+                        Angélica Cruz <em>“Gangy”</em> es una talentosa artista visual mexicana (20 de Agosto de 1994), con una pasión innata por el arte en todas sus formas. Desde una temprana edad, se ha especializado en pintura, escultura, ilustración e ingeniería en papel, buscando constantemente expandir sus horizontes creativos. Además de su destacada carrera como artista, ha tenido el privilegio de compartir su conocimiento y despertar la pasión por el arte en otros como docente de artes para todas las edades.
+                    </p>
+                    <p>
+                        Actualmente, Gangy aporta su experiencia y habilidades al departamento de Marketing y Diseño de Grupo Valle de México, donde se ha enfocado en el desarrollo de nuevas habilidades en diseño UX, UI y Diseño Web. Su objetivo es fusionar su pasión por el arte con las últimas tendencias en diseño digital, creando experiencias únicas y atractivas para los usuarios. Su curiosidad insaciable y su deseo de alcanzar sus objetivos la han llevado a tomar diversos cursos para mejorar sus habilidades creativas y de programación.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MI IMAGENES -->
+        <section class="container">
+            <div class="curriculo">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/Illustrator.png" alt="Ícono Adobe Illustrator">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/Photoshop.png" alt="Ícono Adobe Photoshop">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/Lightroom.png" alt="Ícono Adobe Lightroom">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/Premier Pro.png" alt="Ícono Adobe Premiere">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/css.png" alt="Ícono CCS 3">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/html.png" alt="Ícono HTML 5">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/JavaScript.png" alt="Ícono JavaScript">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/Figma.png" alt="Ícono Figma">
+                    </div>
+                    <div class="skills__img-container">
+                        <img src="imgs/icons/VSCode.png" alt="Ícono Visual Studio Code">
+                    </div>
+                </div>
+                <div class="system-and-hobbies">
+                    <div class="system-and-hobbies-box">
+                        <h1>operation systems</h1>
+                        <div class="operation__systems">
+                            <div class="operation__systems-container">
+                                <img src="imgs/icons/Windows 11.png" alt="Logo Windows">
+                            </div>
+                            <div class="operation__systems-container">
+                                <img src="imgs/icons/Mac OS.png" alt="Logo MacOs">
+                            </div>
+                            <div class="operation__systems-container">
+                                <img src="imgs/icons/Apple.png" alt="Logo Apple">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="system-and-hobbies-box">
+                        <h1>Hobbies</h1>
+                        <br>
+                <div class="hobbies">
+                    <div class="hobbies-container">
+                        <img src="imgs/icons/controller-1.png" alt="Ícono control de videojuegos">
+                    </div>
+                    <div class="hobbies-container">
+                        <img src="imgs/icons/piano-1.png" alt="Ícono piano">
+                    </div>
+                    <div class="hobbies-container">
+                        <img src="imgs/icons/movie-1.png" alt="Ícono películas">
+                    </div>           
+                </div>
+                    </div>
+                </div>
+                <div class="info__academica">
+                    <h1>Formación académica</h1>
+                    <div class="info__academica-container">
+                        <figure class="info__academica-box">
+                            <div class="educacion__img">
+                                <img src="imgs/icons/UNAM.svg" alt="Logo UNAM">
+                            </div>    
+                            <h3>Licenciatura en artes visuales</h3>
+                            <p>2012-2016</p>
+                        </figure>
+                        <figure class="info__academica-box">
+                            <div class="educacion__img">
+                                <img src="imgs/icons/San carlos.svg" alt="Logo Academia de San Carlos">
+                            </div> 
+                            <h3>diplomado libro ilustrado y libro álbum</h3>
+                            <p>2018</p>
+                        </figure>
+                        <figure class="info__academica-box">
+                            <div class="educacion__img">
+                                <img src="imgs/icons/Alura-oracle.svg" alt="Logo Alura LATAM">
+                            </div> 
+                            <h3>formación front end & Businnes Agility</h3>
+                            <p>2023</p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+
+        <section id="proyectos">
+            <div class="proyectos">
+                <div class="proyectos__categoria">
+                    <div class="proyectos__imagen">
+                        <div class="proyectos__img-horizontal">
+                            <img src="imgs/Arte/super-fresa.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="proyectos__textos">
+                        <h2>Arte</h2>
+                        <p>● Grafito  ● Acuarela  ● Pastel
+                            ● Óleo  ● Acrílico
+                            ● Escultura</p>
+                    </div>
+                    <a href="arte.html" class="proyectos__boton">Ver más</a>
+                </div>
+                <div class="proyectos__categoria">
+                    <div class="proyectos__imagen">
+                        <div class="proyectos__img-horizontal">
+                            <img src="imgs/Disegno/Promoción-abril.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="proyectos__textos">
+                        <h2>Diseño</h2>
+                        <p>● Post para redes ● Fotografía  ● Video 
+                            ● Corte láser  ● Recorte de vinil
+                            ● Comunicación interna</p>
+                    </div>
+                    <a href="disegno.html" class="proyectos__boton">Ver más</a>
+                </div>
+                <div class="proyectos__categoria">
+                    <div class="proyectos__imagen">
+                        <div class="proyectos__img-vertical">
+                            <img src="imgs/Ilustracion/tigre-agua.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="proyectos__textos">
+                        <h2>Ilustración</h2>
+                        <p>● Web Cómic ● Comisiones  ● Collage
+                            ● Escultura en papel  ● Digital
+                            ● Ingeniería en papel</p>
+                    </div>
+                    <a href="ilustracion.html" class="proyectos__boton">Ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- UX/UI -->
+
+        <section id="">
+            <div class="disegno__uxi">
+                <div class="disegno__uxi-photo"></div>
+                <div class="disegno__uxi-texto">
+                    <h1>UX/UI</h1>
+                    <p>Gangy es una apasionada del diseño UX, UI y la programación Front End. Su combinación de creatividad y habilidades técnicas la convierte en una candidata ideal para crear experiencias digitales atractivas y funcionales. Con conocimientos en HTML, CSS y JavaScript, está lista para enfrentar desafíos emocionantes en el diseño interactivo, equilibrando estética y funcionalidad.</p>
+                    <a href="ux-ui.html" class="proyectos__boton">ver más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+
+        <section>
+            <div class="contacto" id="contacto">
+                <div class="formulario__contenedor">
+                    <div class="formulario">
+                        <div class="formulario__texto">
+                            <h1>Contacto</h1>
+                            <p>¿Interesado en colaborar juntos? Contáctame para más información. Estaré encantada de comunicarme contigo. </p>
+                        </div>
+                        <form action="">
+                            <div>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                                <p class="error">Por favor escribe tu nombre</p>
+                            </div>
+                            <div>
+                                <input type="tel" name="phone" id="phone" placeholder="Teléfono">
+                                <p class="error">Por favor escribe tu teléfono</p>
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                                <p class="error">Por favor escribe tu correo</p>
+                            </div>
+                            <div>
+                                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
+                                <p class="error">Por favor escribe tu mensaje</p>
+                            </div>
+                            <div>
+                                <textarea name="" id="mensaje" placeholder="Mensaje"></textarea>
+                                <p class="error">Por favor escribe tu mensaje</p>
+                            </div>
+                            <div>
+                                <button type="submit">Enviar</button>
+                            </div>
+
+                            <a class="WhatsAppButton" aria-label="Chat on WhatsApp" href="https://wa.me/525531796646" target="_blank">
+                                <img alt="Chat on WhatsApp" src="imgs/icons/WhatsAppButtonGreenLarge.svg" style="width: 100%"/>
+                            </a>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="pie__pagina">
+            <ul>
+                <h2>Gangy</h2>
+                <li>+52 55 3179 6646</li>
+                <li>(01) 779 688 5347</li>
+                <li>contacto@gangy-studio.com</li>
+            </ul>
+            <ul>
+                <h2>Sígueme</h2>
+                <li>
+                    <a href="https://www.facebook.com/gangy99" target="_blank">
+                        <img src="imgs/icons/Facebook.png" alt="Ícono Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/gangy_99/" target="_blank">
+                        <img src="imgs/icons/Instagram.png" alt="Ícono Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gangy99/" target="_blank">
+                        <img src="imgs/icons/socials.png" alt="Ícono linkedin" >
+                    </a>
+                    <a href="https://www.behance.net/gangy" target="_blank">
+                        <img src="imgs/icons/Behance.png" alt="Ícono Behance">
+                    </a>
+                    <a href="https://github.com/gangy99" target="_blank">
+                        <img src="imgs/icons/GitHub.png" alt="Ícono GitHub">
+                    </a>
+                    <a href="https://www.tiktok.com/@gangy_99" target="_blank">
+                        <img src="imgs/icons/Tiktok.png" alt="Ícono Tiktok">
+                    </a>
+                
+                </li>
+            </ul>
+            <ul>
+                <p>Desarrollado por Angélica Cruz “Gangy” <br>
+                    2023</p>
+            </ul>
+        </div>
+    </footer>
 </body>
+
+<script src="js/fixed-menu.js"></script>
+<script src="js/mobile-menu.js"></script>
+
 </html>
