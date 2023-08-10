@@ -1,0 +1,30 @@
+.pie__pagina{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+footer ul{
+    margin-bottom: 2rem;
+}
+
+footer li{
+    margin-bottom: 1rem;
+}
+
+footer a{
+    margin-left: 1rem;
+}
+
+footer a:first-child{
+    margin-left: 0;
+}
+
+footer p{
+    margin-bottom: 0;
+    text-align: center;
+}

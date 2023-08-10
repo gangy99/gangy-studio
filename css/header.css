@@ -1,0 +1,152 @@
+/* MENU BARRA */
+
+.menu__bar{
+    background-color: #26252700;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff50;
+}
+
+.logo__gangy{
+    height: 50px;
+    margin-left: 1rem;
+}
+
+.logo__gangy img{
+    height: 100%;
+}
+.menu__bar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__bar ul a{
+    margin-right: 2rem;
+}
+
+.menu__bar ul a:first-child{
+    margin-left: 0px;
+}
+
+.menu__bar i{
+    margin-right: 15px;
+}
+
+/* FIXED MENU */
+
+.fixed__menu{
+    top: -100px;
+    background-color: #262527;
+    position: fixed;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff50;
+    z-index: 100;
+    transition: all ease .5s;
+}
+
+.logo__gangy img{
+    max-height: 40px;
+    margin-left: 1rem;
+}
+
+.fixed__menu a{
+    margin-left: 2rem;
+}
+
+.fixed__menu a:first-child{
+    margin-left: 0px;
+}
+
+.fixed__menu i{
+    margin-right: 15px;
+}
+
+
+/* MENU MOBILE */
+
+.mobile__menu{
+    display: none;
+}
+
+
+@media screen and (max-width:767px) {
+
+    /*ENCABEZADO*/
+
+    .menu__bar{
+        display: none;
+    }
+
+    .fixed__menu{
+        display: none;
+    }
+
+    .mobile__menu{
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile__menu-barra{
+        display: flex;
+        padding: 15px 0;
+        background-color: #262527;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 120;
+        border-bottom: 1px solid #ffffff50;
+
+    }
+    .logo__gangy{
+        margin:0 15px 0 0;
+    }
+
+
+    #btnMenu{
+        margin-left: 15px;
+        text-decoration: none;
+        background: none;
+        color: #ffffff;
+        border: 0;
+    }
+
+    #btnMenu i{
+        font-size: 2.3rem;
+    }
+
+    #closeMenu i{
+        font-size: 2rem;
+        text-align: right;
+    }
+
+
+    
+
+    .mobile__menu ul{
+        display: flex;
+        background-color: #4e4c50;
+        width: 60%;
+        flex-direction: column;
+        text-transform: uppercase;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 300;
+        transition: all ease .5s;
+    }
+
+    .mobile__menu ul a{
+        padding: 24px 36px;
+        border-bottom: 1px solid #ffffff50;
+    }
+}

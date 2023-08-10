@@ -1,0 +1,152 @@
+.categoria__banner{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.categoria__titulo{
+    width: 80%;
+}
+
+.banner__img{
+    width: 100vw;
+    height: 700px;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.banner__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+
+
+}
+
+
+/* TEXTOS */
+
+.categoria__titulo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portafolio__h1{
+    font-size: 120px;
+}
+
+.portafolio__texto-p{
+    font-size: 36px;
+    text-align: center;
+}
+
+
+/* BOTON */
+
+.boton__siguiente{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #262527;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.boton__siguiente:hover{
+    background: #fff;
+    color: #262527;
+    transition: all ease .5s;
+}
+
+.bienvenida{
+    margin: 3rem 0 2rem 0;
+}
+
+.bienvenida h1{
+    text-align: center;
+}
+
+.proyecto article{
+    padding-bottom: 2rem;
+}
+
+
+/* GALERÍA */
+
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.galeria__imagen{
+    width: 20%;
+    height: 180px;
+    background-color: #fff;
+    margin: 1rem;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.galeria__imagen img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media screen and (max-width:767px){
+
+
+    .portafolio__h1{
+        font-size: 100px;
+    }
+
+    .portafolio__texto-p{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width:650px){
+    .galeria{
+        justify-content: center;
+    }
+
+    .galeria__imagen{
+        width: 300px;
+        height: 300px;
+    }
+
+    .portafolio__h1{
+        font-size: 80px;
+    }
+
+}
+
+@media screen and (max-width:540px){
+
+    .portafolio__h1{
+        font-size: 50px;
+    }
+}

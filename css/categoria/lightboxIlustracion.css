@@ -1,0 +1,316 @@
+
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+    height: 100px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 400;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #000000e9;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    height: 100vh;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: 200;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides__container{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .column__container{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: .5;
+  }
+
+  /* mySlides----------------------- */
+
+  .mySlides {
+    object-fit: contain;
+  }
+  
+  .mySlides img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* mySlides02 */
+
+  .mySlides02 {
+    object-fit: contain;
+  }
+  
+  .mySlides02 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /* mySlides03 */
+
+  .mySlides03 {
+    object-fit: contain;
+  }
+  
+  .mySlides03 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+   /* mySlides04 */
+
+   .mySlides04 {
+    object-fit: contain;
+  }
+  
+  .mySlides04 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* mySlides05 */
+
+  .mySlides05 {
+    object-fit: contain;
+  }
+  
+  .mySlides05 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /* mySlides06 */
+
+  .mySlides06 {
+    object-fit: contain;
+  }
+  
+  .mySlides06 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* mySlides07 */
+
+  .mySlides07 {
+    object-fit: contain;
+  }
+  
+  .mySlides07 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* mySlides08 */
+
+  .mySlides08 {
+    object-fit: contain;
+  }
+  
+  .mySlides08 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  #caption{
+    text-align: center;
+  }
+
+  #caption02{
+    text-align: center;
+  }
+
+  #caption03{
+    text-align: center;
+  }
+
+  #caption04{
+    text-align: center;
+  }
+
+  #caption05{
+    text-align: center;
+  }
+  #caption06{
+    text-align: center;
+  }
+  #caption07{
+    text-align: center;
+  }
+  #caption08{
+    text-align: center;
+  }
+
+
+/* IMG */
+
+
+  img.demo {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo02 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo03 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo04 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo05 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo06 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo07 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo08 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  /*  HOVER -------------------------  */
+
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }

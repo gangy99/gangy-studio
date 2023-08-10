@@ -1,0 +1,190 @@
+/* Sobre Mi */
+
+.sobre__mi{
+    width: 100%;
+    align-self: center;
+    display: flex;
+    margin: 60px 0px;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.ladrona-amable{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    margin-right: 3rem;
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.ladrona-amable img{
+    width: 100%;
+}
+
+.banner_principal-texto{
+    max-width: 60%;
+}
+
+
+
+/* SKILLS */
+
+.curriculo{
+    width: 100%;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.skills__img-container,
+.operation__systems-container,
+.hobbies-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.skills__img-container img,
+.operation__systems img, 
+.hobbies img{
+    width: 80%;
+    max-width: 80px;
+}
+
+/* SYSTEM AND HOBBIES */
+
+.system-and-hobbies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.system-and-hobbies-box{
+    flex-grow: 1;
+    max-width: 45%;
+    margin-bottom: 2rem;
+}
+
+.operation__systems, .hobbies{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.operation__systems img:first-child, .hobbies img:first-child{
+    margin-left: 0px;
+}
+
+.operation__systems img, .hobbies img{
+    margin-left: 2rem;
+}
+
+/* INFO ACADEMICA */
+
+.info__academica{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.info__academica-container{
+    display: flex;
+    justify-content:space-between;
+}
+
+.info__academica-box{
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.educacion__img{
+    margin-bottom: 1rem;
+}
+
+.educacion__img img{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:767px){
+
+    /* Sobre Mi */
+
+    .sobre__mi{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner_principal-texto{
+        max-width: 100%;
+    }
+
+    .ladrona-amable{
+        margin: 2rem 0%;
+        width: 80%;
+    }
+
+    /* SKILLS */
+
+    .skills{
+        justify-content: center;
+    }
+    
+    .skills__img-container,
+    .operation__systems-container,
+    .hobbies-container{
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    /* SYSTEM AND HOBBIES */
+
+    .system-and-hobbies{
+        flex-direction: column;
+    }
+
+    .system-and-hobbies-box{
+        max-width: 100%;
+    }
+
+    .operation__systems, .hobbies{
+        justify-content: center;
+    }
+
+
+
+    /* INFO ACADEMICA */
+
+    .info__academica{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .info__academica-box{
+        margin: 0;
+        width: 100%;
+    }
+
+    .info__academica-container{
+        flex-direction: column;
+    }
+}
+
