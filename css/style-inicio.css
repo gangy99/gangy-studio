@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: hsla(270,3%,15%,1.00);
+    color: hsla(0,0%,100%,1.00);
+    font-family: 'Raleway', sans-serif;
+	
+}
+.contenedor {
+    width: 100%;
+    height: auto;
+}
+
+/*Tigre*/
+.slide{
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(../imgs/tira-imagenes.png);
+    background-size: 120vw auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tigre{
+    width: 80vw;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tigre img{
+    width: 80%;
+    object-position: center;
+}
+
+/*Navegador hamburguesa*/
+.nav-01{
+    width: 70%;
+    background-color: hsla(0,0%,0%,0.80);
+    background-size: contain;
+    border-top-color: hsla(0,0%,100%,0.63);
+    border-radius: 8px;
+    position: fixed;
+    margin-left: -100%;
+	transition: all 0.5s;
+}
+.nav-01 ul {
+    flex-direction: column;
+    display: flex;
+}
+.nav-01 li {
+    color: hsla(0,0%,100%,1.00);
+    border-top: 2px solid hsla(0,0%,100%,0.63);
+    padding: 1em;
+    font-size: 1em;
+}
+.nav-01 li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsla(0,0%,100%,1.00);
+}
+.nav-01 li a:hover {
+    color: hsla(187,54%,34%,1.00);
+}
+.ham {
+    width: 4em;
+    height:auto;
+    margin-left: 24px;
+    margin-top: 11px;
+}
+#btn-menu {
+    display: none;
+}
+header label {
+    cursor: pointer;
+}
+#btn-menu:checked ~.nav-01 {
+    margin-left: 24px;
+}
+/*Menú completo*/
+.menu{
+    display: none;
+    text-decoration: none;
+    flex-direction: column;
+    float: left;
+}
+.menu li{
+    margin: 24px;
+    list-style: none;
+}
+.menu li a{
+    color: hsla(0,0%,100%,1.00);
+    transition: all 0.5s ease;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: hsla(0,0%,100%,1.00);
+    color: hsla(270,3%,15%,1.00);
+    border-radius: 16px;
+    text-decoration: none;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: hsla(270,3%,15%,1.00);
+    text-decoration: none;
+}
+.inicio {
+    width: 50px;
+    margin: 24px;
+    height: 50px;
+    display: none;
+}
+/*Footer*/
+footer {
+    width: 100%;
+    margin-top: 1em;
+}
+footer h1 {
+    font-style: normal;
+    font-weight: bold;
+    margin: 12px;
+    font-size: 2em;
+}
+footer li {
+    margin: 12px;
+    font-size: 1em;
+}
+.col-01 {
+    width: auto;
+    float: none;
+    padding-bottom: 1em;
+}
+.col-02 {
+    float: none;
+    padding-bottom: 1em;
+}
+.redes {
+    width: 3em;
+    height: 3em;
+    display: inline;
+    margin-left: 1em;
+}
+
+@media only screen and (min-width:480px){
+.nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: hsla(270,3%,15%,1.00);
+    text-decoration: none;
+    z-index: 40;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+.inicio{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.nav-01{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer h1{
+    font-size: 1.2em;
+}
+footer li{
+    font-size: 0.9em;
+}
+.col-01{
+    margin-right: 12px;
+}
+.col-02{
+    margin-right: 1em;
+}
+.redes{
+    margin-bottom: 12px;
+}
+}
+@media only screen and (min-width:768px){
+
+.slide{
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.redes {
+    width: 50px;
+    height: 50px;
+}
+.tigre{
+    width: 70vw;
+}
+.col-02{
+    margin-right: 1em;
+}
+}

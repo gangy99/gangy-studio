@@ -1,0 +1,690 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: hsla(270, 3%, 15%, 1.00);
+  color: hsla(0, 0%, 100%, 1.00);
+  font-family: 'Raleway', sans-serif;
+}
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  z-index: 40;
+}
+.contenedor::-webkit-scrollbar-thumb {
+  background: hsla(0,0%,100%,0.60);
+  border-radius: 5px;
+}
+header{
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    background-color: hsla(270,3%,15%,1.00);
+}
+/*Navegador hamburguesa*/
+.nav-01{
+    width: 70%;
+    background-color: hsla(0,0%,0%,0.80);
+    background-size: contain;
+    border-top-color: hsla(0,0%,100%,0.63);
+    border-radius: 8px;
+    position: fixed;
+    margin-left: -100%;
+	transition: all 0.5s;
+}
+.nav-01 ul {
+    flex-direction: column;
+    display: flex;
+}
+.nav-01 li {
+    color: hsla(0,0%,100%,1.00);
+    border-top: 2px solid hsla(0,0%,100%,0.63);
+    padding: 1em;
+    font-size: 1em;
+}
+.nav-01 li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: hsla(0,0%,100%,1.00);
+}
+.nav-01 li a:hover {
+    color: hsla(187,54%,34%,1.00);
+}
+.ham {
+    width: 4em;
+    height:auto;
+    margin-left: 24px;
+    margin-top: 11px;
+}
+#btn-menu {
+    display: none;
+}
+header label {
+    cursor: pointer;
+}
+#btn-menu:checked ~.nav-01 {
+    margin-left: 24px;
+}
+/*Menú completo*/
+.menu{
+    display: none;
+    text-decoration: none;
+    flex-direction: column;
+    float: left;
+}
+.menu li{
+    margin: 24px;
+    list-style: none;
+}
+.menu li a{
+    color: hsla(0,0%,100%,1.00);
+    transition: all 0.5s ease;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: hsla(0,0%,100%,1.00);
+    color: hsla(270,3%,15%,1.00);
+    border-radius: 16px;
+    text-decoration: none;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: hsla(270,3%,15%,1.00);
+    text-decoration: none;
+}
+.inicio {
+    width: 50px;
+    margin: 24px;
+    height: 50px;
+    display: none;
+}
+/*Footer*/
+footer {
+    width: 100%;
+    margin-top: 1em;
+}
+footer h1 {
+    font-style: normal;
+    font-weight: bold;
+    margin: 12px;
+    font-size: 2em;
+}
+footer li {
+    margin: 12px;
+    font-size: 1em;
+}
+.col-01 {
+    width: auto;
+    float: none;
+    padding-bottom: 1em;
+}
+.col-02 {
+    float: none;
+    padding-bottom: 1em;
+}
+.redes {
+    width: 3em;
+    height: 3em;
+    display: inline;
+    margin-left: 1em;
+}
+/*Rectángulo*/
+.rectangulo {
+    background-color: hsla(0,0%,100%,0.70);
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    align-self:flex-end;
+    margin-bottom: 10%;
+    padding: 1.5em 0 1.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.rectangulo p {
+    color: hsla(270, 3%, 15%, 1.00);
+}
+.text{
+    width: 50%;
+}
+h2 {
+    color: hsla(270, 3%, 15%, 1.00);
+    font-weight: 700;
+    text-align: left;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+p {
+    font-weight: normal;
+    font-size: 1.2em;
+    display: none;
+    text-align: justify;
+}
+.mas {
+  width: 3em;
+  background-position: 0% 0%;
+  padding-top: 0px;
+  background-size: 50px auto;
+  bottom: 16px;
+  background-repeat: no-repeat;
+}
+.imagen {
+    display: none;
+}
+/*Sliders*/
+.slider-01 {
+    background-size: cover;
+    background-image: url(../imgs/bco-ngr-01.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: 21% 0%;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.slider-02 {
+  background-image: url(../imgs/V.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 25%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.slider-03 {
+  background-image: url(../imgs/super-fresa.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 25%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.slider-04 {
+  background-image: url(../imgs/mar-01.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+.slider-05 {
+    background-image: url(../imgs/hm-01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .slider-06 {
+    background-image: url(../imgs/ladrona-1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .slider-07 {
+    background-image: url(../imgs/tigre-san-aparicio.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .slider-08 {
+    background-image: url(../imgs/tigre-agua.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+/*Acerca de*/
+.selfie {
+    margin-top: 15%;
+    margin-bottom: 3em;
+    border-radius: 360%;
+    width: 80vw;
+    height: auto;
+    align-self: center;
+}
+.acerca {
+    padding: 1.5em;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.acerca-cont {
+    position: static;
+    overflow-y: visible;
+}
+h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+.acerca p {
+    margin-bottom: 24px;
+    height: auto;
+    font-size: 1em;
+    display: inline-block;
+}
+.acerca-cont::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.acerca-cont::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 100%, 0.60);
+  border-radius: 5px;
+}
+/*H*/
+
+h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  width: 30%;
+  height: auto;
+}
+
+/*Ventana*/
+.ventana {
+    width: 90vw;
+    height: 80vh;
+    background-color: hsla(0,0%,0%,1.00);
+    display: none;
+    border-radius: 18px;
+    margin-top: 20%;
+    background-repeat: no-repeat;
+    z-index: 30;
+    position: absolute;
+    align-content: center;
+    overflow-y: scroll;
+    padding: 1em;;
+}
+.cerrar {
+    width: 50px;
+    float: right;
+    height: auto;
+    margin: 1em;
+}
+.title-vent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.gallery-title {
+    align-content: center;
+    padding: 1em;
+    width: 90%;
+    text-align: center;
+    align-self: center;
+}
+h5 {
+    margin-bottom: 0.5em;
+    color: hsla(0,0%,100%,1.00);
+    font-weight: bold;
+    font-size: 2em;
+}
+h6 {
+    color: hsla(0,0%,100%,1.00);
+    font-size: 1.2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+h6 a{
+    text-decoration: none;
+    font-weight: bold;
+    color: hsla(187,54%,34%,1.00);
+}
+.gallery {
+    width: 100%;
+    margin-bottom: 24px;
+    overflow-x: hidden;
+    visibility: inherit;
+    position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    align-content: center;
+    height: 100vh;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+.scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+.gridscroll{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+	overflow: auto;
+}
+
+.gridscroll img {
+    scroll-snap-align: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.gridscroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.gridscroll::-webkit-scrollbar-thumb {
+  background: hsla(0,0%,100%,0.60);
+  border-radius: 5px;
+}
+
+@media only screen and (min-width:480px){
+.nav{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: hsla(270,3%,15%,1.00);
+    text-decoration: none;
+    z-index: 40;
+    font-size: 1em;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+.inicio{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.nav-01{
+    display: none;
+}
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+    footer h1{
+    font-size: 1.2em;
+}
+footer li{
+    font-size: 0.9em;
+}
+.col-01{
+    margin-right: 12px;
+}
+.col-02{
+    margin-right: 1em;
+}
+.redes{
+    margin-bottom: 12px;
+}
+/*Rectángulo*/
+
+.text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+p{
+    display: none;
+}
+.imagen{
+    display: block;
+    width: 20%;
+}
+.imagen img{
+    width: 100%;
+
+}
+.mas{
+    padding-right: 1em;
+}
+
+/*Acerca de */
+.selfie{
+    margin-right: 2em;
+}
+.acerca-cont{
+    padding-right: 1em;
+    margin-bottom: 1.5em;
+}
+}
+@media only screen and (min-width:768px){
+/*Acerca de*/
+.selfie {
+    margin-top: 15vh;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    border-radius: 360%;
+    width: 40vw;
+    height: 100%;
+}
+.acerca {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.redes {
+    width: 50px;
+    margin-right: 16px;
+    height: 50px;
+}
+.acerca-cont {
+    float: right;
+    margin-top: 100px;
+    width: 60vw;
+    margin-right: 40px;
+    height: 80vh;
+    overflow-y: scroll;
+    display: inline;
+    overflow-x: hidden;
+}
+.acerca p {
+    margin-right: 24px;
+    margin-bottom: 24px;
+    height: auto;
+    width: 100%;
+}
+.acerca-cont::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.acerca-cont::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 100%, 0.60);
+  border-radius: 5px;
+}
+/*H*/
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 24px;
+    margin-bottom: 25px;
+}
+h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  width: 30%;
+  height: auto;
+}
+/*Ventama*/
+.ventana {
+    width: 90vw;
+    height: 80vh;
+    background-color: hsla(0,0%,0%,1.00);
+    display: none;
+    place-items: center;
+    border-radius: 18px;
+    background-repeat: no-repeat;
+    clear: none;
+    float: none;
+    z-index: 30;
+    position: absolute;
+    align-content: center;
+    margin-top: 4em;
+}
+h5 {
+    margin-bottom: 0.5em;
+    color: hsla(0,0%,100%,1.00);
+    font-weight: bold;
+    font-size: 2.3em;
+}
+h6 {
+    color: hsla(0,0%,100%,1.00);
+    font-size: 18px;
+}
+
+.gallery-title {
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    display: inline;
+}
+.title-vent {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.scroll-container{
+    overflow: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background: transparent;
+    border-radius: 15px;
+    width: 90%;
+    height: 90%;
+}
+
+.gridscroll{
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    overflow-y: hidden;
+}
+.gridscroll img {
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    margin-right: 24px;
+    width: auto;
+}
+.cerrar {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-right: 24px;
+    margin-top: 24px;
+}
+.gridscroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+.gridscroll::-webkit-scrollbar-thumb {
+  background: hsla(0,0%,100%,0.60);
+  border-radius: 5px;
+}
+
+/*Retángulo*/
+h2 {
+  width: 100%;
+  color: hsla(270, 3%, 15%, 1.00);
+  font-weight: 700;
+  font-size: 40px;
+  top: 32px;
+  margin: 0 0 12px 0;
+}
+p{
+    display: block;
+    font-weight: medium;
+}
+/*SLIDER*/
+.slider-08{
+    background-position: 0 85%;
+}
+}
+
