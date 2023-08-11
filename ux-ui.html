@@ -33,37 +33,37 @@
 
         <!-- MENU BARRA -->
         <nav class="menu__bar">
-            <a href="#" class="logo__gangy">
+            <a href="index.html" class="logo__gangy">
                 <img src="imgs/Logo Gangy bco-03.png" alt="logo gangy">
             </a>
             <ul>
-                <a href="#">Sobre mí</a>
-                <a href="#">Arte</a>
-                <a href="#">Diseño</a>
-                <a href="#">Ilustración</a>
-                <a href="#">UX/UI</a>
-                <a href="#">Contacto</a>
+                <a href="index.html#sobreMi">Sobre mí</a>
+                <a href="arte.html">Arte</a>
+                <a href="disegno.html">Diseño</a>
+                <a href="ilustracion.html">Ilustración</a>
+                <a href="ux-ui.html">UX/UI</a>
+                <a href="index.html#contacto">Contacto</a>
             </ul>
-            <a href="#">
+            <a href="https://wa.me/525531796646" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
             
         </nav>
 
         <!-- FIXED MENU -->
-        <nav class="fixed__menu">
-            <a href="#" class="logo__gangy">
+        <nav class="fixed__menu" id="fixedMenu">
+            <a href="index.html" class="logo__gangy">
                 <img src="imgs/Logo Gangy bco-03.png" alt="logo gangy">
             </a>
             <ul>
-                <a href="#">Sobre mí</a>
-                <a href="#">Arte</a>
-                <a href="#">Diseño</a>
-                <a href="#">Ilustración</a>
-                <a href="#">UX/UI</a>
-                <a href="#">Contacto</a>
+                <a href="index.html#sobreMi">Sobre mí</a>
+                <a href="arte.html">Arte</a>
+                <a href="disegno.html">Diseño</a>
+                <a href="ilustracion.html">Ilustración</a>
+                <a href="ux-ui.html">UX/UI</a>
+                <a href="index.html#contacto">Contacto</a>
             </ul>
-            <a href="#">
+            <a href="https://wa.me/525531796646" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
             </a>
         </nav>
@@ -71,24 +71,26 @@
         <!-- MOBILIE MENU -->
 
         <nav class="mobile__menu">
-            <div>
-                <a href="#" class="logo__gangy">
-                    <img src="../imgs/Logo Gangy bco-03.png" alt="logo gangy">
+            <div class="mobile__menu-barra">
+                <a href="index.html" class="logo__gangy">
+                    <img src="imgs/Logo Gangy bco-03.png" alt="logo gangy">
                 </a>
-                <a href="#" id="btnMenu">
+                <a id="btnMenu" onclick="openNav()">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </div>
-            <ul>
-                <a href="#">Sobre mí</a>
-                <a href="#">Arte</a>
-                <a href="#">Diseño</a>
-                <a href="#">Ilustración</a>
-                <a href="#">UX/UI</a>
-                <a href="#">Contacto</a>
+            <ul id="mobileMenuList">
+                <a id="closeMenu" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+                <a id="closeMenu" onclick="closeNav()" href="index.html#sobreMi">Sobre mí</a>
+                <a id="closeMenu" onclick="closeNav()" href="arte.html">Arte</a>
+                <a id="closeMenu" onclick="closeNav()" href="disegno.html">Diseño</a>
+                <a id="closeMenu" onclick="closeNav()" href="ilustracion.html">Ilustración</a>
+                <a id="closeMenu" onclick="closeNav()" href="ux-ui.html">UX/UI</a>
+                <a id="closeMenu" onclick="closeNav()" href="index.html#contacto">Contacto</a>
             </ul>
 
     </header>
+
 
 
     <main>
@@ -102,19 +104,22 @@
             <div class="categoria__titulo">
                 <div class="categoria__banner-texto">
                     <h1 class="portafolio__h1">UX / UI</h1>
-                <p class="portafolio__texto-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="portafolio__texto-p">Explorando la Fusión del Arte y la Tecnología</p>
                 </div>       
-                <a href="#" class="boton__siguiente">SIGUIENTE</a>
+                <a href="#bienvenida" class="boton__siguiente">SIGUIENTE</a>
             </div>
             
         </section>
 
-        <!-- BIENVENIDA -->
-        <section class="proyecto__container">
+        <div class="container">
+            
+            <!-- BIENVENIDA -->
+        <section class="proyecto__container" id="bienvenida">
             <article class="bienvenida">
-                <h1>Frase de bienvenida</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus tellus, porttitor non eros at, pellentesque suscipit ante. In pellentesque venenatis magna non fermentum. Fusce hendrerit lacus sit amet dolor sodales aliquet vel sed neque. Pellentesque magna nibh, porta dapibus nibh vel, varius placerat magna. Integer pharetra nec nisi a placerat. Vestibulum lacus urna, efficitur et interdum sit amet, ultricies non ex. Donec vulputate faucibus commodo. Nullam eget dolor convallis est volutpat convallis.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus tellus, porttitor non eros at, pellentesque suscipit ante. In pellentesque venenatis magna non fermentum. Fusce hendrerit lacus sit amet dolor sodales aliquet vel sed neque. Pellentesque magna nibh, porta dapibus nibh vel, varius placerat magna. Integer pharetra nec nisi a placerat. Vestibulum lacus urna, efficitur et interdum sit amet, ultricies non ex. Donec vulputate faucibus commodo. Nullam eget dolor convallis est volutpat convallis.</p>
+                <h1>Del Lienzo a la Interfaz</h1>
+                <p>Como artista visual dedicada y apasionada, <em>Gangy</em> ha dirigido su enfoque hacia el mundo del diseño UX y UI, áreas que ha explorado con una pasión incansable. A pesar de haber descubierto estos campos relativamente hace poco tiempo, su compromiso y determinación la han llevado a convertirse en una experta en constante crecimiento.</p>
+                <p>Desde sus primeros pasos en el desarrollo front end, al crear su propio portafolio digital, su interés por desarrollar experiencias digitales impactantes y funcionales se ha ido consolidando. Ha invertido esfuerzos considerables en buscar formación a través de diversas plataformas, desde las más reconocidas hasta aquellas especializadas en diseño. Como resultado, ha dominado lenguajes esenciales como HTML, CSS y JS, empleándolos para construir páginas web responsivas y centradas en el usuario.</p>
+                <p>Además de su destreza técnica, su deseo de mejorar la experiencia del usuario la llevó a explorar cursos relacionados con UX, SEO y SEM. Esto ha demostrado su habilidad para fusionar la funcionalidad y el diseño atractivo en cada proyecto. Su enfoque centrado en optimizar el alcance de cada creación, asegurando una interacción fluida y efectiva, resalta su compromiso con la excelencia en el diseño UX y UI.</p>
             </article>
         </section>
 
@@ -126,18 +131,23 @@
             <div class="proyecto__uxi">
                 <div class="proyecto__uxi-info">
                     <div class="proyecto__uxi-text">
-                        <h1>Nombre del proyecto</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h1>Copy-Cat Encriptador</h1>
+                        <p>Proyecto de encriptador para "Challenge 1" del programa ONE</p>
                     </div>
                     <div class="proyecto__uxi-botones">
-                        <a class="proyecto__uxi-boton-fill" href="#">Figma</a>
-                        <a class="proyecto__uxi-boton-line" href="#">Ver demo</a>
+                        <a class="proyecto__uxi-boton-fill" 
+                        href="https://www.figma.com/file/lKl1W2ECPvET6CtOMhGAWR/Encriptador?type=design&node-id=0%3A1&mode=design&t=KdNP1l3RPrzbk05o-1"
+                        target="_blank">Figma</a>
+                        <a class="proyecto__uxi-boton-line" 
+                        href="https://gangy99.github.io/copycat-encrypter/"
+                        target="_blank">Ver demo</a>
                     </div>
                 </div>
                     <div class="proyecto__uxi-img">
-                        <img src="imgs/UX-UI/copy-cat.png" alt="">
+                        <img src="imgs/UX-UI/copy-cat.png" alt="Apariencia final de encriptador">
                     </div>
             </div>
+            
         </section>
 
           <!-- PROYECTOS DISEÑO UX/UI 02 -->
@@ -146,19 +156,54 @@
             <div class="proyecto__uxi-02">
                 <div class="proyecto__uxi-info">
                     <div class="proyecto__uxi-text">
-                        <h1>Nombre del proyecto</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h1>Parque puente grande</h1>
+                        <p>Página web del parque indistrial "Puente grande"</p>
                     </div>
                     <div class="proyecto__uxi-botones">
-                        <a class="proyecto__uxi-boton-fill" href="#">Figma</a>
-                        <a class="proyecto__uxi-boton-line" href="#">Ver demo</a>
+                        <a class="proyecto__uxi-boton-fill" href="https://parquepuentegrande.mx/">Ver página</a>
                     </div>
                 </div>
                     <div class="proyecto__uxi-img">
-                        <img src="imgs/UX-UI/copy-cat.png" alt="">
+                        <img src="imgs/UX-UI/puentegrande.png" alt="Banner principal de página de Parque Puente grande">
                     </div>
             </div>
         </section>
+
+         <!-- PROYECTOS DISEÑO UX/UI 03 -->
+
+         <section class="proyecto__container">
+            <div class="proyecto__uxi">
+                <div class="proyecto__uxi-info">
+                    <div class="proyecto__uxi-text">
+                        <h1>Prometeo Cinema</h1>
+                        <p>Diseño ux/ui de sitio web para productora Prometeo Cinema</p>
+                    </div>
+                    <div class="proyecto__uxi-botones">
+                        <a class="proyecto__uxi-boton-fill" 
+                        href="https://www.figma.com/file/zGlAqsBip8CPmb3ogxXdNv/Site-Map-(Prometeo-Cinema)?type=design&node-id=17%3A30&mode=design&t=H9i86lzBC8bANrJx-1"
+                        target="_blank">Site Map</a>
+                        <a class="proyecto__uxi-boton-line" 
+                        href="https://www.figma.com/file/yB061zEgZ9jFbJLWZBgEdt/User-persona-(Prometeo-Cinema)?type=design&node-id=0%3A1&mode=design&t=NuMg2cGMLiEhg7AP-1"
+                        target="_blank">User Persona</a>
+                        <a class="proyecto__uxi-boton-fill" 
+                        href="https://www.figma.com/file/2MZLxbWRiA6k3sH4OBsWni/Customer-Journey-Map-(Prometeo-Cinema)?type=whiteboard&node-id=0%3A1&t=LmjUBfNYoVH4IgF6-1"
+                        target="_blank">Customer journey</a>
+                        <a class="proyecto__uxi-boton-line" 
+                        href="https://www.figma.com/file/bYqWgI4r0qXH7nAeVCJa9R/Wireframe-(Prometeo-Cinema)?type=design&node-id=0%3A1&mode=design&t=6hVZo4UBS6zbFgkh-1"
+                        target="_blank">Figma</a>
+                        
+                    </div>
+                </div>
+                    <div class="proyecto__uxi-img">
+                        <img src="imgs/UX-UI/prometeo-user.png" alt="User persona 1 de Prometeo Cinema">
+                    </div>
+            </div>
+            
+        </section>
+
+        </div>
+
+     <!-- ----------------------------------------------------------------->
         
         <hr>
 

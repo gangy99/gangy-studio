@@ -60,6 +60,7 @@ h3{
     margin: 4rem auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .proyecto__container{
     width: 80%;
