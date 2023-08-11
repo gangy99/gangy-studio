@@ -131,3 +131,47 @@ function showSlides02(n) {
     dots03[slideIndex-1].className += " active";
     captionText03.innerHTML = dots03[slideIndex-1].alt;
   }
+
+  //Lightbox proyecto 04 ------------------------------------------------------
+  
+  // Open the Modal 04 
+  
+  function openModal04() {
+    document.getElementById("myModal04").style.display = "block";
+  }
+  
+  // Close the Modal 03
+  function closeModal04() {
+    document.getElementById("myModal04").style.display = "none";
+  }
+  
+  var slideIndex = 1;
+  showSlides04(slideIndex);
+  
+  // Next/previous controls
+  function plusSlides04(n) {
+    showSlides04(slideIndex += n);
+  }
+  
+  // Thumbnail image controls
+  function currentSlide04(n) {
+    showSlides04(slideIndex = n);
+  }
+  
+  function showSlides04(n) {
+    var i;
+    var slides04 = document.getElementsByClassName("mySlides04");
+    var dots04 = document.getElementsByClassName("demo04");
+    var captionText04 = document.getElementById("caption04");
+    if (n > slides04.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides04.length}
+    for (i = 0; i < slides04.length; i++) {
+      slides04[i].style.display = "none";
+    }
+    for (i = 0; i < dots04.length; i++) {
+      dots04[i].className = dots04[i].className.replace(" active", "");
+    }
+    slides04[slideIndex-1].style.display = "flex";
+    dots04[slideIndex-1].className += " active";
+    captionText04.innerHTML = dots04[slideIndex-1].alt;
+  }

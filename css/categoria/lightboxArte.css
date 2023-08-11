@@ -93,6 +93,18 @@
     width: 100%;
   }
 
+  /* mySlides04 */
+
+  .mySlides04 {
+    object-fit: contain;
+  }
+  
+  .mySlides04 img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+
 
   .column__container{
     display: flex;
@@ -159,6 +171,10 @@
     text-align: center;
   }
 
+  #caption04{
+    text-align: center;
+  }
+
 
 /* IMG */
 
@@ -178,6 +194,13 @@
   }
 
   img.demo03 {
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  img.demo04 {
     opacity: 0.6;
     object-fit: cover;
     width: 100%;
