@@ -28,6 +28,14 @@
     margin-right: 2rem;
 }
 
+.menu__bar ul a:hover{
+    background: #ffffff;
+    color: #262527;
+    border-radius: 18px;
+    padding: 7px;
+    transition: all ease .5s;
+}
+
 .menu__bar ul a:first-child{
     margin-left: 0px;
 }
@@ -67,6 +75,14 @@
 
 .fixed__menu i{
     margin-right: 15px;
+}
+
+.fixed__menu ul a:hover{
+    background: #ffffff;
+    color: #262527;
+    border-radius: 18px;
+    padding: 7px;
+    transition: all ease .5s;
 }
 
 
@@ -149,4 +165,11 @@
         padding: 24px 36px;
         border-bottom: 1px solid #ffffff50;
     }
-}
+}   
+    .mobile__menu ul a:hover{
+      
+        background: #ffffff;
+        color: #262527;
+        transition: all ease .5s;
+        
+    }
