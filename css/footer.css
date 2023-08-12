@@ -28,3 +28,18 @@ footer p{
     margin-bottom: 0;
     text-align: center;
 }
+
+@media screen and (max-width:767px){
+
+    footer li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer li a{
+        margin-bottom: 1rem;
+    }
+
+}

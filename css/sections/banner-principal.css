@@ -5,30 +5,44 @@
     background-size: 120%;
     background-repeat: no-repeat;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
 }
 .ilustracion-principal{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
+
 .banner__principal-logo{
-    max-width: 50%;
-    position: absolute;
-    top: 82%;
     z-index: 1;
+    position: absolute;
+    width: 80%;
+    top: 80%;
+
 }
 
 .banner__principal-logo img{
+    object-fit: contain;
+    height: 100%;
     width: 100%;
-    height: auto;
     
 }
 
 .tigre{
     z-index: 10;
-    width: 80%;
+    position: relative;
+    
+}
+
+.tigre img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
