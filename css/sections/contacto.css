@@ -118,3 +118,9 @@ form button[type="submit"]:hover {
         margin-top: 2rem;
     }
 }
+
+@media screen and (max-width:450px){
+    .formulario{
+        padding: 32px;
+    }
+}
