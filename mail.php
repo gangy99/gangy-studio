@@ -15,12 +15,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contenido .= "Asunto: $asunto\n";
     $contenido .= "Mensaje: $mensaje\n";
 
-    $headers = "From: $email";
+    $headers = "From: gangystudio@example.com";
 
     mail($destinatario, $asuntoCorreo, $contenido, $headers);
+    //echo "<script> alert('Correo enviado exitosamente') </script>";
+    echo "<script> setTimeout(\"location.href='index.html'\",1000) </script>";
 
     // Puedes redirigir al usuario a una página de confirmación
-    header("Location: index.html");
+    // header("Location: index.html");
 }
 
 
