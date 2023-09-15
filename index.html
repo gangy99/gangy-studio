@@ -298,24 +298,19 @@
                         </div>
                         <form action="mail.php" method="POST">
                             <div>
-                                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                                <p class="error">Por favor escribe tu nombre</p>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required data-tipo="name">
                             </div>
                             <div>
-                                <input type="tel" name="phone" id="phone" placeholder="Teléfono">
-                                <p class="error">Por favor escribe tu teléfono</p>
+                                <input type="tel" name="phone" id="phone" placeholder="Teléfono" required data-tipo="phone" pattern="^\d{10}$" maxlength="10" minlength="10">
                             </div>
                             <div>
-                                <input type="email" name="email" id="email" placeholder="Correo electrónico">
-                                <p class="error">Por favor escribe tu correo</p>
+                                <input type="email" name="email" id="email" placeholder="Correo electrónico" required data-tipo="email">
                             </div>
                             <div>
-                                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
-                                <p class="error">Por favor escribe tu mensaje</p>
+                                <input type="text" name="asunto" id="asunto" placeholder="Asunto" required data-tipo="asunto" pattern="[\s\S{10,40}">
                             </div>
                             <div>
-                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
-                                <p class="error">Por favor escribe tu mensaje</p>
+                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
                             </div>
                             <div>
                                 <button type="submit">Enviar</button>
@@ -376,5 +371,6 @@
 
 <script src="js/fixed-menu.js"></script>
 <script src="js/mobile-menu.js"></script>
+<script type="module" src="js/app.js"></script>
 
 </html>
