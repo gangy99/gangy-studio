@@ -1,21 +1,21 @@
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
 
-    if (validadores[tipoDeInput]) {
-        validadores[tipoDeInput](input)
+    if (input.validity.valid) {
+      input.parentElement.classList.remove("input-container--invalid");
+      input.parentElement.querySelector("input-message-error").innerHTML = "";
+    }else{
+      input.parentElement.classList.add("input-container--invalid");
+      input.parentElement.querySelector("input-message-error").innerHTML = mostrarMensajeDeError (tipoDeInput, input);
     }
 
 }
 
-const validadores = {
-    name : (input) => validarNacimiento (input)
-}
 
 const tipoDeErrores = [
     "valueMissing",
     "typeMismatch",
     "patternMismatch",
-    "customError",
   ];
   
   const mensajesDeError = {
@@ -23,7 +23,7 @@ const tipoDeErrores = [
       valueMissing: "El campo nombre no puede estar vacío",
     },
     phone: {
-        valueMissing: "El campo contraseña no puede estar vacío",
+        valueMissing: "El campo teléfono no puede estar vacío",
         patternMismatch:
           "El formato requerido es XXXXXXXXXX (10 dígitos)",
       },
@@ -34,9 +34,22 @@ const tipoDeErrores = [
     asunto: {
       valueMissing: "Este campo no puede estar vacío",
       atternMismatch:
-          "El asunto debe tener entre 10 y 40 caracteres",
+          "El asunto debe tener entre 2 y 40 caracteres",
     },
     mensaje: {
         valueMissing: "Este campo no puede estar vacío",
-      }
+      },
   };
+
+  function mostrarMensajeDeError(tipoDeInput, input) {
+    let mensaje = "";
+    tipoDeErrores.forEach((error) => {
+      if(input.validity[error]){
+        console.log(tipoDeInput, error);
+        console.log(input.validity[error]);
+        console.log(mensajesDeError[tipoDeInput][error]);
+        mensaje = mensajesDeError[tipoDeInput][error];
+      }
+    })
+    return mensaje;
+  }
