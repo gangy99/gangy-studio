@@ -298,24 +298,24 @@
                         </div>
                         <form action="mail.php" method="POST">
                             <div class="input-container">
-                                <input type="text" name="nombre" id="nombre"  placeholder="Nombre" required data-tipo="name">
+                                <input type="text" name="nombre" id="nombre"  placeholder="Nombre" required data-tipo="name" autocomplete="off" >
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="input-container">
-                                <input type="tel" name="phone" id="phone" placeholder="Teléfono" required data-tipo="phone" pattern="^\d{10}$" maxlength="10" minlength="10">
+                                <input type="tel" name="phone" id="phone" placeholder="Teléfono" autocomplete="off" required data-tipo="phone" pattern="^\d{10}$" maxlength="10" minlength="10 ">
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="input-container">
-                                <input type="email" name="email" id="email" placeholder="Correo electrónico" required data-tipo="email">
+                                <input type="email" name="email" id="email" placeholder="Correo electrónico" required data-tipo="email" autocomplete="off" >
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="input-container">
-                                <input type="text" name="asunto" id="asunto" placeholder="Asunto" required data-tipo="asunto" pattern="[\s\S{2,40}" title="Debe contener de 2 a 40 caracteres">
+                                <input type="text" name="asunto" id="asunto" placeholder="Asunto" required data-tipo="asunto" pattern="[\s\S]{2,40}" title="Debe contener de 2 a 40 caracteres" autocomplete="off" >
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
-                            <div class="input-container">
+                            <div class="textarea-container">
                                 <textarea name="mensaje" id="mensaje" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
-                                <span class="input-message-error">Este campo no es válido</span>
+                                <span class="textarea-mensagem-erro">Este campo no es válido</span>
                             </div>
                             <div>
                                 <button type="submit">Enviar</button>

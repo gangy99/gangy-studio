@@ -41,11 +41,34 @@ form{
 
 .input-container--invalid {
     margin-bottom: 0.5rem;
-  }
-  
-  .input-container--invalid .input {
     border: 1px solid red;
     border-radius: 7px;
+}
+
+.input-container--invalid .input-message-error {
+    color: red;
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .textarea-container--invalid {
+    margin-bottom: 0.5rem;
+    border: 1px solid red;
+    border-radius: 7px;
+  }
+  
+  .textarea-mensagem-erro {
+    color: red;
+    font-size: 12px;
+    display: none;
+  }
+  
+  .textarea-container--invalid .textarea-mensagem-erro {
+    display: block;
+    color: red;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
   }
   
 
