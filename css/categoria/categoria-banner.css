@@ -114,6 +114,10 @@
     display: flex;
 }
 
+.galeria__imagen:hover{
+    filter: brightness(50%), blur();
+}
+
 
 @media screen and (max-width:767px){
 
