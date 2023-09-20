@@ -314,7 +314,7 @@
                                 <span class="input-message-error">Este campo no es válido</span>
                             </div>
                             <div class="textarea-container">
-                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" data-tipo="mensaje" required></textarea>
+                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" pattern="[\s\S]{10,400}" data-tipo="mensaje" required></textarea>
                                 <span class="textarea-mensagem-erro">Este campo no es válido</span>
                             </div>
                             <div>
@@ -377,5 +377,6 @@
 <script src="js/fixed-menu.js"></script>
 <script src="js/mobile-menu.js"></script>
 <script src="js/app.js" type="module" ></script>
+<script src="js/textarea-validacion.js"></script>
 
 </html>

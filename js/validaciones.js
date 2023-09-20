@@ -49,26 +49,3 @@ const tipoDeErrores = [
     return mensaje;
   }
 
-  const textarea = document.querySelector("textarea");
-
-  textarea.addEventListener('blur', (textarea) =>{
-    textarea.target;
-    console.log(textarea);
-  });
-
-  if (errorTextarea) {
-    textarea.parentElement.classList.remove("textarea-container--invalid");
-    textarea.parentElement.querySelector(".textarea-mensagem-erro").innerHTML = "";
-  }else{
-    textarea.parentElement.classList.add("textarea-container--invalid");
-    textarea.parentElement.querySelector(".textarea-mensagem-erro").innerHTML = errorTextarea(textarea);
-  }
-
-
-  function errorTextarea(textarea) {
-    let mensaje = "";
-      if(textarea = ""){
-        mensaje = "Este campo no puede estar vacío";
-      }
-    return mensaje;
-  }
