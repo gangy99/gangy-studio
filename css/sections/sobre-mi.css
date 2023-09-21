@@ -38,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 3rem;
     align-items: center;
 }
@@ -103,10 +103,11 @@
 .info__academica-container{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 .info__academica-box{
-    width: 30%;
+    width: 45%;
     height: auto;
     display: flex;
     flex-direction: column;

@@ -115,7 +115,7 @@
 }
 
 .galeria__imagen:hover{
-    filter: brightness(50%), blur();
+    filter: brightness(80%) blur(2px);
 }
 
 
